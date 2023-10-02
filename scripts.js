@@ -28,3 +28,4 @@ document.querySelectorAll("img").src = "https://media.giphy.com/media/2v170e71aa
 
 //Cambia el fondo de todos los infocard-lg-data text-muted para todos los Pokimon voladores itype flying
 
+document.querySelector(".infocard-lg-data text-muted > .itype flying").style.backgroundColor ="yellow"
