@@ -32,11 +32,11 @@ for(let a=0;a<gif.length;a++){
 
 //Cambia el fondo de todos los infocard-lg-data text-muted para todos los Pokimon voladores itype flying
 
-let voladores = document.querySelectorAll(".infocard-lg-data.text-muted")
+let pokemon = document.querySelectorAll(".infocard-lg-data.text-muted")
 
-for (let i=0; i<voladores.length;i++){
-    if(voladores[i].children[4].children[1].textContent=="Flying"){
-        voladores[i].style.backgroundColor = "yellow"
+for (let i=0; i<pokemon.length;i++){
+    if(pokemon[i].children[4].children[1].innerHTML==="Flying"){
+        pokemon[i].style.backgroundColor = "yellow"
     }
 }
 
