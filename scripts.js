@@ -26,19 +26,17 @@ console.log(fotos)
 
 let gif = document.querySelectorAll("img")
 for(let a=0;a<gif.length;a++){
-   gif[a].src = "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
+ //gif[a].src = "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
 }
 
 
 //Cambia el fondo de todos los infocard-lg-data text-muted para todos los Pokimon voladores itype flying
 
-let pokemon = document.querySelectorAll(".infocard-lg-data.text-muted")
+let pokemon = document.querySelectorAll(".infocard-lg-data.text-muted > small > .itype.flying")
 
 for (let i=0; i<pokemon.length;i++){
-    if(pokemon[i].children[4].children[1].innerHTML==="Flying"){
-        pokemon[i].style.backgroundColor = "yellow"
+        pokemon[i].parentElement.parentElement.style.backgroundColor = "yellow"
     }
-}
 
 
 
