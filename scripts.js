@@ -5,7 +5,7 @@ document.getElementById("gen-1").innerHTML ="Generasión 1 Pokimon"
 
 
 //Cambia el color de fondo de la primera generación de Pokimon.
-document.querySelector(".infocard-list-pkmn-lg").style.backgroundColor ="red"
+document.querySelector(".infocard-list-pkmn-lg").style.backgroundColor ="lightblue"
 
 
 //Imprime por consola la URL de la página.
@@ -24,8 +24,21 @@ console.log(fotos)
 //Sustituye el atributo "src" de todas las imágenes por este "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
 
 
-document.querySelectorAll("img").src = "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
+let gif = document.querySelectorAll("img")
+for(let a=0;a<gif.length;a++){
+   gif[a].src = "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
+}
+
 
 //Cambia el fondo de todos los infocard-lg-data text-muted para todos los Pokimon voladores itype flying
 
-document.querySelector(".infocard-lg-data text-muted > .itype flying").style.backgroundColor ="yellow"
+let voladores = document.querySelectorAll(".infocard-lg-data.text-muted")
+
+for (let i=0; i<voladores.length;i++){
+    if(voladores[i].children[4].children[1].textContent=="Flying"){
+        voladores[i].style.backgroundColor = "yellow"
+    }
+}
+
+
+
